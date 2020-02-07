@@ -15,6 +15,15 @@ public class DoublyLinkedList {
         list.addToFront(marySmith);
         list.addToFront(mikeWilson);
 
+        //adding a new employee to the end, removing an employee from the front, printing the list and getting its size.
+        Employee billEnd = new Employee("Bill", "End", 78);
+        list.addToEnd(billEnd);
+        list.removeFromFront();
+        list.printList();
+        System.out.println(list.getSize());
+
+        //removing from the end of the list
+        list.removeFromEnd();
         list.printList();
         System.out.println(list.getSize());
     }
